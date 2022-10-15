@@ -1,6 +1,6 @@
 #подключаем numpy
 import numpy as np
-cr_amount = int(input("Введите количество критериев: "))
+cr_amount = int(input("Введите количество критериев от 1 до 9: "))
 
 i = 1
 #создаем  матрицу
