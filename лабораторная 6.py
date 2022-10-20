@@ -1,6 +1,8 @@
 #подключаем numpy
 import numpy as np
 cr_amount = int(input("Введите количество критериев от 1 до 9: "))
+if cr_amount>9&<1
+print('Введите верные данные')
 
 i = 1
 #создаем  матрицу
