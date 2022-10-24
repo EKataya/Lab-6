@@ -10,5 +10,5 @@ ____
 Программа написана на языке Python 3.7 в Visual Studio 2019 Программу можно открыть в любой IDE, поддерживающей Python
 ____
 # Скриншоты тестов программы: 
-![тест 1](https://sun9-west.userapi.com/sun9-52/s/v1/ig2/gf5NVcBmI5xw5N9NFwJgQNAv4BneUBYlMzuyPYLhb6n6apjHZ3pUrYbWAtav_vngQAsTJvzlk4eWkb0cJo8iaRbP.jpg?size=556x211&quality=96&type=album)
-![тест 2](https://sun9-north.userapi.com/sun9-79/s/v1/ig2/3MSm5te3eeElxgVMWtQThuon7IdvgdHqe5uCOIMBu_5dPjA3iqeNqZb8Ir5DIgIWXJ_SUU-pWxKGARL6xN-jYNcb.jpg?size=633x280&quality=96&type=album)
+![тест 1](https://sun9-west.userapi.com/sun9-50/s/v1/ig2/gRjPvwaCRiKBhIhagXE2w_onuBEPdKNbeWzlTfxse1zBJ0g17F0T6sk-Y5RCUOMQe16kurULCXaChrln_UKICTde.jpg?size=529x202&quality=96&type=album)
+![тест 2](https://sun9-east.userapi.com/sun9-36/s/v1/ig2/Pz4hUc7nlC5s5SQwi20T21YXlB23EHqik_1gBBpf2XEjOks6dVWdRUEuWwnx9z_C0XXvJPUDHHxfss_Z1MrmNmO_.jpg?size=609x265&quality=96&type=album)
