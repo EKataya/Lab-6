@@ -1,22 +1,34 @@
-#подключаем numpy
 import numpy as np
-cr_amount = int(input("Введите количество критериев : "))
-if (cr_amount == -1) or (cr_amount < 1):
-        print("Количество критериев должно быть положительным целым числом")
-
-i = 1
-#создаем  матрицу
+while True:
+    try:
+        cr_amount = int(input("Введите количество критериев "))
+        break
+    except ValueError:
+        print('Количество критериев должно быть положительным целым числом')
+# Создание матрицы
 matr = np.eye(cr_amount)
-# цикл для заполнения матрицы
-for q in range(i, cr_amount+1):
-  for p in range(i+1, cr_amount+1):
-    matr[q-1][p-1] = round(float(input("Введите отношение  критериев {0}-{1}: ".format(q, p))), 3)
-    matr[p-1][q-1] = round((matr[q-1][p-1])**(-1), 2)
-  i += 1
-# создаем  список весовых коэффициентов
+# Заполнение матрицы коэффициентами
+a = 1
+for p in range(a, cr_amount+1):
+    for q in range(a+1, cr_amount+1):
+        while True:
+            try:
+                #Заполняем каждый элемент строки матрицы
+                matr[p-1][q-1] = round(float(input('Введите отношение критериев {0}-{1}: '.format(p, q))), 3)
+                break
+            except ValueError:
+                print('Неверный ввод')
+        # Заполнение ячеек для обратного соотношения
+        matr[q-1][p-1] = round(matr[p-1][q-1]**(-1), 2)
+    a += 1
+# Создание сумм строк
 sum_matr = [round(sum(j),2) for j in matr]
-# выводим список коэффициентов
-print('Весовые коэффициенты:')
-for k in sum_matr:
-  print(round(k/sum(sum_matr), 2), end=' ')
+sum_matr1 = [round(n/sum(sum_matr), 2) for n in sum_matr]
+if (sum(sum_matr1)) != 1.0:
+    index = sum_matr1.index(max(sum_matr1))
+    k = (sum(sum_matr1)) - 1.0
+    sum_matr1[index] -= k
+print('Весовые коэффициенты')
+for ind in sum_matr1:
+    print(ind, end=' ')
 
